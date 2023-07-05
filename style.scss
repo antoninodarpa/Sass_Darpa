@@ -1,5 +1,6 @@
-@import "components.scss";
-@import "resets.scss";
+@use "functions" as f;
+@import "components";
+@import "resets";
 
 div {
   @include mix1($color-secondary, $color-primary);
@@ -12,15 +13,16 @@ div {
   section {
     display: flex;
     flex-direction: row;
-    padding-top: 1rem;
+    padding-top: f.in-rem(16);
 
     article {
       @include mix1(red, green, row);
+
       &:nth-child(odd) {
         color: blue;
-        &:last-child {
-          color: green;
-        }
+      }
+      &:last-child {
+        color: green;
       }
     }
   }
@@ -34,4 +36,4 @@ div {
 //   }
 // }
 
-// // exercise by Sorrentino , D'arpa , De Giorgio .
+// exercise by Sorrentino - D'arpa - De Giorgio - Natella
