@@ -4,28 +4,51 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 24px;
+}
+
 div {
-  border: solid 1px red;
-  margin: 10px 10px;
+  text-align: center;
+  color: green;
+  border: 1px solid red;
+  font-size: 1rem;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
 }
 div h1 {
-  color: green;
   -webkit-text-decoration: underline blue;
   text-decoration: underline blue;
-  text-align: center;
 }
 div section {
-  margin: 5px;
-  padding: 20px 10px;
-  text-align: center;
   display: flex;
-  color: red;
+  flex-direction: row;
+  padding-top: 1rem;
 }
 div section article {
-  border: solid 1px green;
+  text-align: center;
+  color: red;
+  border: 1px solid green;
+  font-size: 1rem;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
 }
 div section article:nth-child(odd) {
   color: blue;
-  padding: 5px;
+}
+div section article:nth-child(odd):last-child {
+  color: green;
 } /*# sourceMappingURL=style.css.map */
+
 /* // exercise by Sorrentino , D'arpa , De Giorgio . */
