@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  border: solid 1px red;
+  margin: 10px 10px;
+}
+div h1 {
+  color: green;
+  -webkit-text-decoration: underline blue;
+  text-decoration: underline blue;
+  text-align: center;
+}
+div section {
+  margin: 5px;
+  padding: 20px 10px;
+  text-align: center;
+  display: flex;
+  color: red;
+}
+div section article {
+  border: solid 1px green;
+}
+div section article:nth-child(odd) {
+  color: blue;
+  padding: 5px;
+} /*# sourceMappingURL=style.css.map */
+/* // exercise by Sorrentino , D'arpa , De Giorgio . */

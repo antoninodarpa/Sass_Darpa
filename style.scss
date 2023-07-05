@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+$border-tonnage: solid 1px;
+
+div {
+  border: solid 1px $color-primary;
+  margin: 10px 10px;
+
+  h1 {
+    color: $color-tertiary;
+    text-decoration: underline blue;
+    text-align: center;
+  }
+
+  section {
+    margin: 5px;
+    padding: 20px 10px;
+    text-align: center;
+    display: flex;
+    color: $color-primary;
+    article {
+      border: $border-tonnage $color-tertiary;
+    }
+    article:nth-child(odd) {
+      color: $color-secondary;
+      padding: 5px;
+    }
+  }
+}
+
+// exercise by Sorrentino , D'arpa , De Giorgio .
